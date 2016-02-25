@@ -1,4 +1,4 @@
-# Insights
+# Vital Force Tech
 
 ### Install Dependencies
 ```
