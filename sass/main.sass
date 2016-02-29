@@ -4,7 +4,7 @@
 @import ../bower_components/font-awesome/scss/font-awesome.scss
 
 header
-  background: url(../images/header.png) no-repeat top / contain
+  background: url(../images/header.png) no-repeat top
   height: 700px
   .navbar-default
     background: transparent
@@ -12,37 +12,54 @@ header
     border-radius: 0
     .navbar-brand
       height: auto
-  .row
-    margin: 200px 0
-    & > div
-      padding: 0
   .headline
     background: #4da049
     padding: 15px 20px 20px
+    width: 320px
+    margin-top: 180px
     h1
       text-transform: uppercase
       color: #fff
-      font-size: 3em
+      font-size: 1.1em
       letter-spacing: 3px
       margin: 0
-      line-height: 1.2em
+      line-height: 1.6em
       strong
         display: block
-        font-size: 1.6em
+        font-size: 1.7em
         font-weight: 900
     a
       color: #fff
       text-transform: uppercase
-      font-size: 1em
+      font-size: 0.6em
       letter-spacing: 2px
       text-decoration: none
       display: block
-      width: 130px
+      width: 70px
       text-align: center
       i
         display: block
-        font-size: 6em
+        font-size: 4em
         margin-bottom: 5px
+
+@media only screen and (min-width : 768px)
+  header
+    .headline
+      width: 450px
+      h1
+        font-size: 1.7em
+      a
+        width: 120px
+        font-size: 1em
+
+@media only screen and (min-width : 992px)
+  header
+    .headline
+      width: 600px
+      h1
+        font-size: 2.2em
+      a
+        font-size: 1.2em
 
 main
   padding: 30px 0
@@ -51,7 +68,7 @@ main
     color: #2b3a8b
     font-size: 3em
     font-weight: 400
-    margin-bottom: 80px
+    margin-bottom: 60px
     strong
       display: block
       color: #52a352
@@ -73,6 +90,8 @@ main
       color: #52a352
       text-transform: uppercase
       font-weight: bold
+    .sub
+      margin-top: 20px
     &.big
       h3
         margin-top: 0
@@ -89,33 +108,119 @@ main
         margin-top: 20px
         margin-bottom: 10px
   .img-responsive
-    margin-bottom: 30px
-  .row
-    margin: 30px 0 0
+    margin: 0 auto 30px
+
+@media only screen and (min-width : 992px)
+  main
+    .img-responsive
+      margin-bottom: 80px
+
+@media only screen and (min-width : 1200px)
+  main
+    .img-responsive
+      margin-bottom: 30px
+
+.share-brochure
+  text-align: center
+  padding: 40px 0 100px
+  h4
+    font-family: $font-family-serif
+    font-style: italic
+    font-size: 2.5em
+  .nav
+    margin-top: 20px
+    padding: 0 20px
+    li
+      padding: 0 10px
+      display: inline-block
+      a
+        background: #555
+        color: #fff
+        font-size: 2em
+        padding: 20px
+        border-radius: 100px
+        width: 80px
+        height: 80px
+        &.facebook
+          background: #3b5998
+        &.twitter
+          background: #55ACEE
+        &.googleplus
+          background: #DA4835
+
+@media only screen and (min-width : 768px)
+  .share-brochure .nav li
+    display: table-cell
+@media only screen and (min-width : 992px)
+  .share-brochure .nav li
+    display: table-cell
+@media only screen and (min-width : 1200px)
+  .share-brochure .nav li
+    display: table-cell
 
 footer
   background: url(../images/footer.png) no-repeat top center #2b3a8b
   color: #fff
-  padding-bottom: 80px
-  text-align: center
-  h4
-    text-transform: uppercase
-    font-weight: 500
-    font-size: 1.3em
-    color: #fff
-    margin: 18px 0 80px
-  h5
-    text-transform: uppercase
+  padding: 120px 0 60px
+  .row > div:nth-child(2)
+    padding-left: 15px
+  .row > div
+    margin-bottom: 40px
   p
-    line-height: 1.5em
-  ul
-    margin: 20px 0 40px
-    list-style-type: none
-    padding: 0
+    opacity: 0.8
+  h3
+    text-transform: uppercase
+    text-decoration: underline
+    margin: 0 0 30px
+  .nav-stacked
     li
-      display: inline-block
-      margin: 0 10px
-    li a,
-    li a:hover
-      color: #fff
-      font-size: 2em
+      margin: 15px 0
+      a
+        color: #fff
+        opacity: 0.8
+        padding: 0
+        text-transform: uppercase
+        font-weight: 500
+        i
+          margin-right: 5px
+        &:hover
+          background: transparent
+          color: #fff
+  img
+    margin-bottom: 45px
+  .carousel
+    height: 175px
+    padding-right: 0
+    .carousel-control
+      bottom: 0
+      top: auto
+      width: auto
+      &.right
+        right: auto
+        left: 25px
+      &.left,
+      &.right
+        background: none
+    .carousel-caption
+      position: static
+      text-align: left
+      padding: 0
+      text-shadow: none
+      h4,
+      p
+        opacity: 0.8
+    .carousel-inner
+      height: 100%
+
+@media only screen and (min-width : 992px)
+  footer
+    .row > div:nth-child(2)
+      padding-left: 25px
+    .carousel
+      padding-right: 20px
+@media only screen and (min-width : 1200px)
+  footer
+    .row > div:nth-child(2)
+      padding-left: 35px
+    .carousel
+      padding-right: 40px
