@@ -10,4 +10,10 @@ $(document).ready(function () {
     $(this).siblings(".readmore").removeClass("hidden");
   });
   var currentURL = window.location.href
+  var facebookURL = "http://www.facebook.com/sharer.php?u=" + currentURL;
+  var twitterURL = "https://twitter.com/share?url=" + currentURL;
+  var googleplusURL = "https://plus.google.com/share?url=" + currentURL;
+  $(".facebook").attr("href",facebookURL);
+  $(".twitter").attr("href",twitterURL);
+  $(".googleplus").attr("href",googleplusURL);
 });
