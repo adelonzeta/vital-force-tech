@@ -6,7 +6,7 @@ $(document).ready(function () {
     $(this).siblings(".readless").removeClass("hidden");
   });
   $("main article .readless").click(function () {
-    $(this).siblings(".readmore-container").animate({height:190},500);
+    $(this).siblings(".readmore-container").animate({height:185},500);
     $(this).addClass("hidden");
     $(this).siblings(".readmore").removeClass("hidden");
   });
