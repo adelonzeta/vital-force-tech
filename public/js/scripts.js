@@ -1,11 +1,12 @@
 $(document).ready(function () {
   $("main article .readmore").click(function () {
-    $(this).siblings(".readmore-container").css("height","auto");
+    var contentHeight = $(this).siblings(".readmore-container").children(".content").height();
+    $(this).siblings(".readmore-container").animate({height:contentHeight},500);
     $(this).addClass("hidden");
     $(this).siblings(".readless").removeClass("hidden");
   });
   $("main article .readless").click(function () {
-    $(this).siblings(".readmore-container").css("height","197px");
+    $(this).siblings(".readmore-container").animate({height:200},500);
     $(this).addClass("hidden");
     $(this).siblings(".readmore").removeClass("hidden");
   });
@@ -16,4 +17,5 @@ $(document).ready(function () {
   $(".facebook").attr("href",facebookURL);
   $(".twitter").attr("href",twitterURL);
   $(".googleplus").attr("href",googleplusURL);
+
 });

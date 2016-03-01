@@ -99,6 +99,7 @@ main
     h3
       color: #52a352
       text-transform: uppercase
+      margin-top: 0
       margin-bottom: 20px
       font-weight: 400
       span
@@ -106,7 +107,7 @@ main
         display: block
     p
       line-height: 1.8em
-      font-size: 1em
+      font-size: 1.3em
       margin-bottom: 5px
     .readmore,
     .readless
@@ -115,6 +116,9 @@ main
       font-weight: bold
     .sub
       margin-top: 20px
+    ul
+      font-size: 1.2em
+      margin: 10px 0
     &.big
       height: auto
       h3
@@ -131,11 +135,14 @@ main
         font-weight: bold
         margin-top: 20px
         margin-bottom: 10px
+        font-size: 1.3em
   .img-responsive
     margin: 0 auto 30px
+    width: 100%
   .readmore-container
-    height: 197px
+    height: 200px
     overflow: hidden
+    margin-bottom: 10px
 
 @media only screen and (min-width : 992px)
   main
@@ -145,7 +152,7 @@ main
 @media only screen and (min-width : 1200px)
   main
     .img-responsive
-      margin-bottom: 30px
+      margin-bottom: 50px
 
 .share-brochure
   text-align: center
@@ -154,7 +161,7 @@ main
     font-family: $font-family-serif
     font-style: italic
     font-size: 2.5em
-  .nav
+  .social-media
     margin-top: 20px
     padding: 0 20px
     li
@@ -168,6 +175,7 @@ main
         border-radius: 100px
         width: 80px
         height: 80px
+        display: inline-block
         &.facebook
           background: #3b5998
         &.twitter
