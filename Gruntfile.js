@@ -48,7 +48,8 @@ module.exports = function (grunt) {
                 },
                 files: {
                     "vendor/jquery.js": "jquery/dist/jquery.js",
-                    "vendor/bootstrap.js": "bootstrap-sass/assets/javascripts/bootstrap.js"
+                    "vendor/bootstrap.js": "bootstrap-sass/assets/javascripts/bootstrap.js",
+                    "vendor/clipboard.js": "clipboard/dist/clipboard.js"
                 }
             },
             fonts: {

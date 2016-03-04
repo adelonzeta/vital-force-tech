@@ -107,7 +107,6 @@
               <div class="content">
                 <h3>Improved and <span>Stabilized</span></h3>
                 <p>Using VFT you can enhance the bioavailability of your functional beverage without adding any chemical or biochemical substances. VFT enegery formulas can be infused into any drink and come in different variations or "patterns". Each pattern can be tailored to support and amplify the effects of key functional ingredients for each beverage in your portfolio.</p>
-                <img class="img-responsive" src="images/thumb6.jpg" alt="" />
               </div>
             </div>
             <a class="readmore" href="javascript:void(0)">Read More</a>
@@ -160,8 +159,10 @@
     <div class="container">
       <h4>Share this Brochure</h4>
       <div class="row">
-        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+        <div>
           <ul class="social-media">
+            <li><a href="" class="email"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#copy-link" target="_blank" class="link"><i class="fa fa-link"></i></a></li>
             <li><a href="" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
             <li><a href="" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
             <li><a href="" target="_blank" class="googleplus"><i class="fa fa-google-plus"></i></a></li>
@@ -170,6 +171,25 @@
       </div>
     </div>
   </section>
+  <div id="copy-link" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Brochure Link</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon"><i class="fa fa-link"></i></div>
+              <input readonly type="text" id="brochure-link" class="form-control input-lg">
+            </div>
+          </div>
+          <a href="javascript:void(0)" data-clipboard-target="#brochure-link" class="btn btn-primary btn-lg btn-block">Copy</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer>
     <div class="container">
       <div class="row">
@@ -254,6 +274,7 @@
   <div class="visible-xs" id="mobile-indicator"></div>
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/bootstrap.js"></script>
+  <script src="js/vendor/clipboard.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
